@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-In Page</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f2f4f7; /* Background matches homepage theme */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url('https://wallpaperaccess.com/full/6841.jpg'); /* Add matching background */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .auth-container {
+            background-color: rgba(0, 40, 85, 0.8); /* Semi-transparent container */
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+            max-width: 400px;
+            text-align: center;
+            color: white;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            color: #00d9ff; /* Theme color for headings */
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            background-color: #00d9ff;
+            color: white;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0095cc; /* Darker shade on hover */
+        }
+
+        a {
+            display: block;
+            margin-top: 1rem;
+            color: #00d9ff;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        p {
+            font-size: 0.9rem;
+            margin-top: 1rem;
+            color: #dddddd;
+        }
+    </style>
+</head>
+<body>
+    <div class="auth-container">
+        <h1>Sign In</h1>
+        <form action="/signin" method="POST">
+            <input type="email" name="email" placeholder="Email Address" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <button type="submit">Sign In</button>
+        </form>
+        <a href="#">Forgot Password?</a>
+        <p>Don’t have an account? <a href="#">Sign up</a></p>
+    </div>
+</body>
+</html>

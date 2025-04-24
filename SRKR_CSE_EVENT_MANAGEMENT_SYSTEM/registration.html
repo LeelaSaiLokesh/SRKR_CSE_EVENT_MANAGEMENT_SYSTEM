@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Register for Upcoming Events | CSE Department</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f2f2f2 url('images/Sprinkle.svg') no-repeat center center fixed;
+      background-size: cover;
+      color: #333;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px 30px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 44px;
+      font-weight: 700;
+      background: linear-gradient(to right, #ffffff, #ffffff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    }
+    .main-heading {
+        display: inline-block;      /* shrink to text width */
+        border-bottom: 4px solid #ffffff;  /* underline thickness & color */
+        padding-bottom: 8px;        /* space between text and line */
+        margin-bottom: 20px;        /* space below the underline */
+   
+    }
+      
+
+    .event-card {
+      max-width: 1000px;
+      margin: 40px auto;
+      display: flex;
+      gap: 30px;
+      align-items: center;
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 18px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.689);
+      transition: transform 0.3s ease;
+    }
+
+    .event-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .event-card img {
+      width: 250px;
+      height: auto;
+      border-radius: 14px;
+      object-fit: cover;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      border: 4px solid #eee;
+      transition: transform 0.3s ease;
+    }
+
+    .event-card img:hover {
+      transform: scale(1.03);
+    }
+
+    .event-details {
+      flex-grow: 1;
+    }
+
+    .event-details h2 {
+      margin: 0 0 10px;
+      font-size: 28px;
+      color: #2c2c2c;
+    }
+
+    .event-details p {
+      margin: 6px 0;
+      color: #555;
+      line-height: 1.5;
+    }
+
+    .event-details strong {
+      color: #222;
+    }
+
+    .register-button {
+      padding: 14px 32px;
+      font-size: 16px;
+      background-color: #1C538E;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      text-decoration: none;
+    }
+
+    .register-button:hover {
+      background-color:#1C538E;
+      box-shadow: 0 4px 12px rgba(22, 38, 121, 0.716);
+    }
+
+    @media (max-width: 768px) {
+      .event-card {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .event-card img {
+        width: 80%;
+      }
+
+      .register-button {
+        margin-top: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1 class="main-heading">Register for Upcoming Events</h1>
+  </header>
+
+  <!-- Event Card -->
+  <div class="event-card">
+    <img src="images/event1.jpg" alt="AI Bootcamp Poster" />
+    <div class="event-details">
+      <h2>AI Bootcamp 2025</h2>
+      <p>📅 <strong>Date:</strong> May 10, 2025</p>
+      <p>A full-day immersive workshop exploring Artificial Intelligence, ML models, and real-time projects. Hands-on coding and expert sessions included.</p>
+    </div>
+    <a href="#register-form" class="register-button">Register</a>
+  </div>
+
+  <!-- You can duplicate the .event-card div to add more events -->
+  <div class="event-card">
+    <img src="images/event2.jpg" alt="Hackathon Poster" />
+    <div class="event-details">
+      <h2>Coding Hackathon 2025</h2>
+      <p>📅 <strong>Date:</strong> May 15, 2025</p>
+      <p>Join our 24-hour Hackathon challenge. Collaborate in teams to build innovative solutions and win exciting prizes!</p>
+    </div>
+    <a href="#register-form" class="register-button">Register</a>
+  </div>
+
+  <div class="event-card">
+    <img src="images/event3.jpg" alt="Design Challenge Poster" />
+    <div class="event-details">
+      <h2>UI/UX Design Challenge</h2>
+      <p>📅 <strong>Date:</strong> May 20, 2025</p>
+      <p>Showcase your creative design skills in our UI/UX challenge. Redesign popular apps and get feedback from design professionals.</p>
+    </div>
+    <a href="#register-form" class="register-button">Register</a>
+  </div>
+
+</body>
+</html>
